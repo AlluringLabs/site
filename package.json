@@ -1,0 +1,31 @@
+{
+  "name": "alluringlabs",
+  "description": "",
+  "author": "Alluring Labs",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlluringLabs/site"
+  },
+  "scripts": {
+    "start": "brunch watch --server"
+  },
+  "dependencies": {
+    "postcss-nested": "^1.0.0",
+    "postcss-nesting": "^2.2.0"
+  },
+  "devDependencies": {
+    "auto-reload-brunch": ">= 1.0 < 1.9",
+    "autoprefixer": "^6.3.1",
+    "clean-css-brunch": ">= 1.0 < 1.9",
+    "css-brunch": ">= 1.0 < 1.9",
+    "csswring": "^4.2.1",
+    "flexboxgrid": "^6.3.0",
+    "javascript-brunch": ">= 1.0 < 1.9",
+    "normalize.css": "^3.0.3",
+    "postcss-brunch": "^0.5.0",
+    "postcss-cssnext": "^2.4.0",
+    "postcss-import": "^8.0.2",
+    "uglify-js-brunch": ">= 1.0 < 1.9"
+  }
+}

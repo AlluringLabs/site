@@ -1,0 +1,6 @@
+@import "normalize.css";
+@import "flexboxgrid";
+
+html {
+  font-family: 'Lato', sans-serif;
+}
