@@ -62,7 +62,7 @@ exports.config = {
         require('postcss-cssnext')(),
         require('postcss-import')(),
         require('postcss-nested')(),
-        require('postcss-nesting')
+        require('postcss-nesting')()
       ]
     }
   },

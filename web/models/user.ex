@@ -45,9 +45,29 @@ defmodule Labs.User do
   end
 
   @doc """
+  Fetches a user by their username
+  """
+  def get_by([username: username]) do
+    Repo.get_by User, username: username
+  end
+
+  @doc """
+  Fetches a user by their email address
+  """
+  def get_by([email: email]) do
+    Repo.get_by User, email_address: email
+  end
+
+  # def validate_password(password, hash) do
+  #   if Bcrypt.checkpw(password, hash) do
+  #
+  #   end
+  # end
+
+  @doc """
   Takes the password and creates a hash using the `Comeonin.Bcrypt` module.
   """
-  defp hash_password(changeset) do
+  def hash_password(changeset) do
     password_hash = Bcrypt.hashpwsalt(get_change(changeset, :password))
     changeset |> put_change(:password_hash, password_hash)
   end

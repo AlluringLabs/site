@@ -10,6 +10,7 @@
     <title>Hello Labs!</title>
 
     <!-- TODO: Add meta tags here or figure out how to make them dynamic. -->
+    <!-- TODO: Add section for Google Analytics -->
 
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>

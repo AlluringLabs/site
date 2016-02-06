@@ -16,11 +16,22 @@ defmodule Labs.Router do
   scope "/", Labs do
     pipe_through :browser # Use the default browser stack
 
+    # Do we want all of the pages in a single controller?
     get "/", PageController, :index
     get "/about", PageController, :about
     get "/code", PageController, :code
     get "/showcase", PageController, :showcase
     get "/contact", PageController, :contact
+
+    # TODO: change to delete before deployment
+    get "/logout", SessionController, :delete
+  end
+
+  scope "/admin", Labs do
+    pipe_through :browser
+
+    # get "/", AdminController, :index
+    get "/login", SessionController, :new
   end
 
   # Other scopes may use custom stacks.
