@@ -21,7 +21,10 @@ exports.config = {
       // }
     },
     stylesheets: {
-      joinTo: "css/app.css"
+      joinTo: "css/app.css",
+      order: {
+        before: []
+      }
     },
     templates: {
       joinTo: "js/app.js"
@@ -52,6 +55,15 @@ exports.config = {
     babel: {
       // Do not use ES6 compiler in vendor code
       ignore: [/web\/static\/vendor/]
+    },
+    postcss: {
+      processors: [
+        require('autoprefixer')(['last 8 versions']),
+        require('postcss-cssnext')(),
+        require('postcss-import')(),
+        require('postcss-nested')(),
+        require('postcss-nesting')
+      ]
     }
   },
 
