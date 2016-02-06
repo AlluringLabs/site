@@ -1,0 +1,9 @@
+#what-we-do {
+  background: var(--grey);
+
+  h3 {
+    display: block;
+    margin-top: 0px;
+    text-align: center;
+  }
+}

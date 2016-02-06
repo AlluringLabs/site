@@ -1,0 +1,78 @@
+#hero-section {
+  padding: 20px 0px;
+  background-color: var(--grey);
+  background: url('images/hero-section.jpeg') center;
+  background-size: cover;
+
+  @media (--md-break) {
+    padding: 40px 0px;
+  }
+
+  .article-snippet {
+    margin: 0px 10px 10px;
+
+    @media (--md-break) {
+      margin: 0px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+
+    .article-content {
+      background-color: var(--white);
+      padding: 15px 20px;
+      position: relative;
+
+      .article-title {
+        font-weight: 200;
+        font-size: 1.1rem;
+        margin: 0px;
+      }
+
+      hr {
+        background: none;
+        border-top: none;
+        border-bottom: 1px solid #D6D6D6;
+      }
+
+      p {
+        font-weight: 300;
+        font-size: 0.8rem;
+        margin-top: 0px;
+        margin-bottom: 30px;
+      }
+
+      .read-more {
+        position: absolute;
+        bottom: 15px;
+        right: 20px;
+        color: var(--teal);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: color 0.3s ease;
+
+        &:after {
+          display: block;
+          position: absolute;
+          left: 0;
+          bottom: -4px;
+          width: 0;
+          height: 2px;
+          background-color: var(--light-blue);
+          content: "";
+          transition: width 0.2s;
+        }
+
+        &:hover {
+          color: var(--light-blue);
+        }
+
+        &:hover:after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

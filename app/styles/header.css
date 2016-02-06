@@ -1,4 +1,4 @@
-header {
+#header {
   background-color: var(--light-blue);
   background-image: linear-gradient(118deg, var(--light-blue) 0%, var(--light-blue) 50%, var(--teal) 50%, var(--teal) 100%);
   height: 85px;
@@ -18,6 +18,10 @@ header {
   nav {
     &:last-of-type {
       text-align: right;
+
+      a:hover {
+        color: var(--light-blue);
+      }
     }
 
     a {

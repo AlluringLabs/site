@@ -1,0 +1,12 @@
+:root {
+  /** Colors */
+  --teal: #40788D;
+  --light-blue: #55A9C7;
+  --grey: #EBEBEB;
+  --white: #FFFFFF;
+
+  /** Breakpoints */
+  @custom-media --lg-break screen and (min-width: 75em);
+  @custom-media --md-break screen and (min-width: 64em);
+  @custom-media --sm-break screen and (min-width: 48em);
+}
