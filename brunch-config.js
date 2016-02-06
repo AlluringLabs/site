@@ -23,7 +23,7 @@ exports.config = {
     stylesheets: {
       joinTo: "css/app.css",
       order: {
-        before: []
+        before: ['colors.css']
       }
     },
     templates: {

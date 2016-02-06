@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg id="alluring-labs-logo" viewBox="8 9 435 266" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <g id="hexagon">
+    <polygon class="hex" points="300,150 225,280 75,280 50,236 175,20 225,20" transform="rotate(-2) translate(70)" fill="#FFFFFF"></polygon>
+    <polygon class="hex" points="75,20 0,150 25,193 125,20" transform="rotate(-2)  translate(70)" fill="#FFFFFF"></polygon>
+  </g>
+
+  <g id="dots">
+    <circle class="dot" cx="33" cy="150" r="25" fill="#FFFFFF"></circle>
+    <circle class="dot" cx="418" cy="134" r="25" fill="#FFFFFF"></circle>
+  </g>
+</svg>

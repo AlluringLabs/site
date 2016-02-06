@@ -3,11 +3,13 @@ defmodule Labs.SessionController do
 
   alias Comeonin.Bcrypt
 
+  plug :scrub_params, "user" when action in [:create]
+
   def new(conn, _) do
-    render "new.html"
+    render conn, "new.html"
   end
 
-  def create(conn, %{"username" => username, "password" => password}) do
+  def create(conn, %{"user" => %{"username" => username, "password" => password}}) do
     case Labs.Session.login [username: username, password: password] do
       {:ok, user} ->
         conn

@@ -30,12 +30,8 @@ defmodule Labs.Router do
   scope "/admin", Labs do
     pipe_through :browser
 
-    # get "/", AdminController, :index
+    get "/", AdminController, :index
     get "/login", SessionController, :new
+    post "/login", SessionController, :create
   end
-
-  # Other scopes may use custom stacks.
-  # scope "/api", Labs do
-  #   pipe_through :api
-  # end
 end

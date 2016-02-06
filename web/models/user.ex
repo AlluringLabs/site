@@ -58,12 +58,6 @@ defmodule Labs.User do
     Repo.get_by User, email_address: email
   end
 
-  # def validate_password(password, hash) do
-  #   if Bcrypt.checkpw(password, hash) do
-  #
-  #   end
-  # end
-
   @doc """
   Takes the password and creates a hash using the `Comeonin.Bcrypt` module.
   """

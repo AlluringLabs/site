@@ -1,0 +1,6 @@
+<%= form_tag("/admin/login", method: :post) do %>
+  <%= text_input :user, :username, placeholder: "Username" %>
+  <%= password_input :user, :password, placeholder: "Password" %>
+
+  <%= submit "Login" %>
+<%= end %>

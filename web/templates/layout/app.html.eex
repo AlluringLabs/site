@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -11,20 +13,39 @@
 
     <!-- TODO: Add meta tags here or figure out how to make them dynamic. -->
     <!-- TODO: Add section for Google Analytics -->
-
+    <script src="https://use.typekit.net/moz1ffr.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 
   <body>
 
-    <nav>
+    <header class="row middle-xs between-xs">
+      <nav class="col-md-4">
+        <a href="#">Articles</a>
+        <a href="#">Podcast</a>
+        <a href="#">Code</a>
+      </nav>
+
+      <object type="image/svg+xml" data="images/logo.svg">
+        <img src="images/logo.png" title="Logo" alt="Alluring Labs - Logo">
+      </object>
+
+      <nav class="col-md-4">
+        <a href="#">Showcase</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <!-- <nav>
       <a href="/">Home</a>
       <a href="/podcast">Podcast</a>
       <a href="/code">Code</a>
       <a href="/showcase">Showcase</a>
       <a href="/about">About</a>
       <a href="/contact">Contact</a>
-    </nav>
+    </nav> -->
 
     <main role="main">
       <%= render @view_module, @view_template, assigns %>
