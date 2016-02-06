@@ -6,7 +6,7 @@ exports.config =
       joinTo: 'app.css'
       order:
         before: [
-          'colors'
+          'styles/colors'
         ]
   plugins:
     postcss:
