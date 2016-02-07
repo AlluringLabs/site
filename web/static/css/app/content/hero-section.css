@@ -1,0 +1,116 @@
+#hero-section {
+  padding: 20px 0px;
+  background-color: var(--grey);
+  background: url('images/hero-section.jpeg') center;
+  background-size: cover;
+
+  @media (--md-break) {
+    padding: 40px 0px;
+  }
+
+  h2 {
+    color: var(--white);
+    font-weight: lighter;
+    margin-top: 0px;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .article-snippet {
+    margin: 0px 10px 10px;
+    position: relative;
+
+    @media (--md-break) {
+      margin: 0px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+
+    .article-content {
+      background-color: var(--white);
+      border-radius: 3px;
+      padding: 15px 20px;
+      position: relative;
+
+      .article-metadata {
+        .tags {
+          position: absolute;
+          top: 15px;
+          left: 20px;
+          padding-left: 0px;
+          margin: 0px;
+
+          .tag {
+            list-style: none;
+            display: inline-block;
+            font-weight: 200;
+            font-size: 0.72rem;
+            color: var(--tags);
+            margin-right: 7px;
+          }
+        }
+
+        .profile-image {
+          position: absolute;
+          top: 15px;
+          right: 20px;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          border: 1px solid var(--tags);
+          margin: 0px;
+          padding: 0px;
+        }
+      }
+
+      .article-title {
+        font-weight: normal;
+        font-size: 1.1rem;
+        color: var(--dark-grey);
+        margin: 20px 0px 10px;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 0.85rem;
+        line-height: 1.1;
+        margin-top: 0px;
+        margin-bottom: 40px;
+        color: #8D9197;
+      }
+
+      .read-more {
+        position: absolute;
+        bottom: 15px;
+        right: 20px;
+        color: var(--teal);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: color 0.3s ease;
+
+        &:after {
+          display: block;
+          position: absolute;
+          left: 0;
+          bottom: -4px;
+          width: 0;
+          height: 2px;
+          background-color: var(--light-blue);
+          content: "";
+          transition: width 0.2s;
+        }
+
+        &:hover {
+          color: var(--light-blue);
+        }
+
+        &:hover:after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

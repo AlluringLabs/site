@@ -4,7 +4,7 @@ defmodule Labs.SessionController do
   alias Comeonin.Bcrypt
 
   plug Labs.Plugs.Admin, "layout" when action in [:new]
-  
+
   plug :scrub_params, "user" when action in [:create]
 
   def new(conn, _) do

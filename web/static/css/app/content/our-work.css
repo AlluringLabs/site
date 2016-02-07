@@ -1,0 +1,35 @@
+#our-work {
+  background-color: var(--grey);
+
+  h3 {
+    display: block;
+    margin-top: 0px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 200;
+    font-size: 2.8rem;
+    color: var(--dark-grey);
+    padding: 40px 0px 50px;
+    margin-bottom: 0px;
+  }
+
+  .work-plural {
+    width: 100%;
+    padding-left: 10px;
+    padding-bottom: 30px;
+
+    .work {
+      display: block;
+      height: 200px;
+      width: 100%;
+      padding-left: 10px;
+      margin-bottom: 20px;
+
+      .work-wrapper {
+        height: 100%;
+        width: 100%;
+        background-color: var(--light-grey);
+      }
+    }
+  }
+}

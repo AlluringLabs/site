@@ -15,12 +15,14 @@
     <!-- TODO: Add section for Google Analytics -->
     <script src="https://use.typekit.net/moz1ffr.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 
   <body>
 
-    <header class="row middle-xs between-xs">
+    <header id="header" class="row middle-xs between-xs">
       <nav class="col-md-4">
         <a href="#">Articles</a>
         <a href="#">Podcast</a>
@@ -28,7 +30,7 @@
       </nav>
 
       <object type="image/svg+xml" data="/images/logo.svg">
-        <img src="/images/logo.png" title="Logo" alt="Alluring Labs - Logo">
+        <img src="/images/logo.png" title="Logo" alt="Alluring Labs Logo">
       </object>
 
       <nav class="col-md-4">
@@ -38,9 +40,35 @@
       </nav>
     </header>
 
-    <main role="main">
+    <main role="main" id="content">
       <%= render @view_module, @view_template, assigns %>
     </main>
+
+    <footer id="footer">
+      <div class="content-wrapper row middle-xs between-xs">
+        <div class="col-sm-6 col-xs-12">
+          <p>&copy; Alluring Labs 2016.  All Rights Reserved.</p>
+        </div>
+
+        <div class="social-media col-sm-6 col-xs-12">
+          <div class="row middle-xs end-sm center-xs">
+            <div class="col-xs-12">
+              <a href="https://github.com/AlluringLabs/" target="_blank" class="social-icon github">
+                <i class="fa fa-github"></i>
+              </a>
+
+              <a href="https://facebook.com/" target="_blank" class="social-icon facebook">
+                <i class="fa fa-facebook-f"></i>
+              </a>
+
+              <a href="https://twitter.com/" target="_blank" class="social-icon twitter">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>

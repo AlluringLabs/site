@@ -1,8 +1,9 @@
-header {
+#header {
   background-color: var(--light-blue);
   background-image: linear-gradient(118deg, var(--light-blue) 0%, var(--light-blue) 50%, var(--teal) 50%, var(--teal) 100%);
   height: 85px;
   position: relative;
+  padding: 0px 20px;
 
   object {
     position: absolute;
@@ -14,26 +15,13 @@ header {
     margin-left: -40px;
   }
 
-  & > #logo {
-    text-align: center;
-    margin-left: -7px;
-    margin-top: 5px;
-
-    a {
-      width: 100px;
-      height: 61px;
-    }
-
-    object, object embed, img {
-      width: 100px;
-    }
-  }
-
-  & > nav {
-    padding-left: 20px;
-
+  nav {
     &:last-of-type {
       text-align: right;
+
+      a:hover {
+        color: var(--light-blue);
+      }
     }
 
     a {

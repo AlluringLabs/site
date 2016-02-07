@@ -1,0 +1,17 @@
+.social-icon {
+  transition: color 0.3s ease;
+
+  &:hover {
+    &.twitter {
+      color: var(--twitter-blue) !important;
+    }
+
+    &.facebook {
+      color: var(--facebook-blue) !important;
+    }
+
+    &.github {
+      color: var(--github-blue) !important;
+    }
+  }
+}

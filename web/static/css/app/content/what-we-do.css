@@ -1,0 +1,123 @@
+#what-we-do {
+  background: var(--grey);
+  padding: 0px 10px 40px;
+
+  @media (--md-break) {
+    padding: 0px 0px 40px;
+  }
+
+  h3 {
+    display: block;
+    margin-top: 0px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 200;
+    font-size: 2.8rem;
+    color: var(--dark-grey);
+    padding: 40px 0px 50px;
+    margin-bottom: 0px;
+  }
+
+  .thing-we-do {
+    text-align: center;
+    margin-top: 60px;
+
+    &:first-of-type {
+      margin-top: 0px;
+    }
+
+    @media (--md-break) {
+      margin-top: 0px;
+    }
+
+    .thing-wrapper {
+      padding: 0px 20px 20px;
+      position: relative;
+      border: 3px solid transparent;
+      border-radius: 5px;
+      background: var(--white);
+      border-color: var(--light-blue);
+      transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+
+      @media (--md-break) {
+        background: none;
+        border-color: transparent;
+        margin-top: 0px;
+      }
+
+      &:hover {
+        background: var(--white);
+        border-color: var(--light-blue);
+
+        .icon {
+          background-color: var(--light-blue);
+          color: var(--white);
+        }
+      }
+
+      h4 {
+        font-weight: 400;
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+        margin-top: 15px;
+        color: var(--dark-grey);
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 0.93rem;
+        color: var(--dark-grey);
+        margin-bottom: 30px;
+      }
+
+      a {
+        color: var(--light-blue);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: color 0.3s ease;
+        position: relative;
+
+        &:after {
+          display: block;
+          position: absolute;
+          left: 0;
+          bottom: -4px;
+          width: 0;
+          height: 2px;
+          background-color: var(--teal);
+          content: "";
+          transition: width 0.2s;
+        }
+
+        &:hover {
+          color: var(--teal);
+        }
+
+        &:hover:after {
+          width: 100%;
+        }
+      }
+
+      .icon {
+        margin-top: -23px;
+        font-size: 3.5rem;
+        background-color: var(--light-blue);
+        color: var(--white);
+        border-radius: 50%;
+        height: 95px;
+        width: 95px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        &:before {
+          line-height: 95px;
+        }
+
+        @media (--md-break) {
+          background-color: #D4D4D4;
+          color: #989898;
+        }
+      }
+    }
+  }
+}
