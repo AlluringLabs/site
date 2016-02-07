@@ -2,19 +2,17 @@ exports.config = {
   // See http://brunch.io/#documentation for docs.
   files: {
     javascripts: {
-      joinTo: {
-        "js/app.js": /^(web\/static\/js\/app)/,
-        "js/admin.js": /^(web\/static\/js\/admin)/
-      }
+      joinTo: "js/app.js"
+      // joinTo: {
+      //   "js/app.js": /^(web\/static\/js\/app)/,
+      //   "js/admin.js": /^(web\/static\/js\/admin)/,
+      // }
     },
     stylesheets: {
       joinTo: {
         "css/app.css": /^(web\/static\/css\/app)/,
         "css/admin.css": /^(web\/static\/css\/admin)/
       }
-    },
-    templates: {
-      joinTo: "js/app.js"
     }
   },
 
@@ -61,6 +59,6 @@ exports.config = {
     enabled: true,
     // Whitelist the npm deps to be pulled in as front-end assets.
     // All other deps in package.json will be excluded from the bundle.
-    whitelist: ["phoenix", "phoenix_html", "vue", "reqwest", "underscore"]
+    whitelist: ["phoenix", "phoenix_html", "vue", "jquery"]
   }
 };

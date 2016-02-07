@@ -6,5 +6,4 @@
   <%= if logged_in?(@conn) do %>
     <a href="#">edit</a>
   <%= end %>
-  
 <% end %>

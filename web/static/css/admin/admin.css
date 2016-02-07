@@ -4,3 +4,36 @@
 html {
   font-family: 'Lato', sans-serif;
 }
+
+header {
+  background: #333;
+
+  nav {
+    padding: 10px 0px;
+
+    &.left {
+      float: left;
+    }
+
+    &.right {
+      float: right;
+    }
+
+    a {
+      display: inline-block;
+      margin-right: 10px;
+      color: #FFF;
+      text-decoration: none;
+
+      &:hover {
+        color: #666;
+      }
+    }
+
+    &:after {
+      display: block;
+      clear: both;
+      content: "";
+    }
+  }
+}

@@ -16,14 +16,32 @@
 
   <body>
 
-    <nav>
-      <a href="/" target="_blank">View Site</a>
-    </nav>
+    <%= if logged_in?(@conn) do %>
+      <header>
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2">
+            <nav class="left">
+              <a href="/" target="_blank">View Site</a>
+              <a href="#">Test</a>
+              <a href="#">Settings</a>
+            </nav>
+
+            <nav class="right">
+              <a href="/logout">Logout</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+    <%= end %>
 
     <main role="main">
-      <%= render @view_module, @view_template, assigns %>
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-2">
+          <%= render @view_module, @view_template, assigns %>
+        </div>
+      </div>
     </main>
 
-    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+    <script src="<%= static_path(@conn, "/js/admin.js") %>"></script>
   </body>
 </html>

@@ -1,1 +1,1 @@
-Admin Page
+<div id="app">{{message}}</div>

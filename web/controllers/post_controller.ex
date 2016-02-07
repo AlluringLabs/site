@@ -11,9 +11,13 @@ defmodule Labs.PostController do
     render conn, "index.html", posts: Repo.all query
   end
 
-  def show(conn, %{"id" => id}) do
-    render "show.html",
-      post: Repo.find Post, id
+  def show(conn, %{"slug" => slug}) do
+    query = from p in Post,
+      where: p.slug == ^slug,
+      preload: [:user]
+      
+    render conn, "show.html",
+      post: Repo.one query
   end
 
   def new(conn, _) do
