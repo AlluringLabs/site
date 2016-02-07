@@ -1,0 +1,67 @@
+#meet-the-team {
+  background-color: var(--light-blue);
+  padding: 0px 10px 60px;
+
+  h3 {
+    display: block;
+    margin-top: 0px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 200;
+    font-size: 2.8rem;
+    color: var(--white);
+    padding: 40px 0px 50px;
+    margin-bottom: 0px;
+  }
+
+  .person {
+    text-align: center;
+    margin-top: 120px;
+
+    .person-wrapper {
+      background-color: var(--white);
+      border-radius: 3px;
+      padding-bottom: 20px;
+    }
+
+    &:first-of-type {
+      margin-top: 55px;
+    }
+
+    @media (--sm-break) {
+      margin-top: 55px;
+    }
+
+    .profile-image {
+      border-radius: 50%;
+      max-width: 150px;
+      margin-top: -75px;
+      border: 5px solid var(--white);
+    }
+
+    .profile-content {
+      h4 {
+        color: var(--dark-grey);
+        font-weight: 200;
+        font-size: 1.7rem;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
+      p {
+        color: var(--dark-grey);
+        font-weight: 200;
+        font-size: 0.9rem;
+        margin-top: 15px;
+        padding: 0px 40px;
+      }
+
+      .users-social {
+        .social-icon {
+          font-size: 1.7rem;
+          color: var(--dark-grey);
+        }
+      }
+    }
+  }
+}

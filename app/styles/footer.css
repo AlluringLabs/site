@@ -30,21 +30,6 @@
       text-decoration: none;
       margin-left: 26px;
       color: var(--white);
-      transition: color 0.3s ease;
-
-      &:hover {
-        &.twitter {
-          color: var(--twitter-blue);
-        }
-
-        &.facebook {
-          color: var(--facebook-blue);
-        }
-
-        &.github {
-          color: var(--github-blue);
-        }
-      }
 
       @media (--sm-break) {
         text-align: right;

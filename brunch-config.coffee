@@ -5,8 +5,8 @@ exports.config =
     stylesheets:
       joinTo: 'app.css'
       order:
-        before: [
-          'styles/global-vars'
+        after: [
+          'app/styles/content/partial/social-icons.css',
         ]
   plugins:
     postcss:
