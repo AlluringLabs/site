@@ -16,13 +16,17 @@ defmodule Labs.Router do
   scope "/", Labs do
     pipe_through :browser # Use the default browser stack
 
-    # Do we want all of the pages in a single controller?
+    # Just some Static pages
     get "/", PageController, :index
-    get "/articles", PostController, :index
     get "/about", PageController, :about
-    get "/code", PageController, :code
-    get "/showcase", PageController, :showcase
     get "/contact", PageController, :contact
+
+    # More dynamic pages
+    get "/showcase", PageController, :showcase
+    get "/code", PageController, :code
+
+    get "/articles", PostController, :index
+    get "/articles/:slug", PostController, :show
 
     # TODO: change to delete before deployment
     get "/logout", SessionController, :delete
@@ -34,5 +38,8 @@ defmodule Labs.Router do
     get "/", AdminController, :index
     get "/login", SessionController, :new
     post "/login", SessionController, :create
+
+    get "/posts", AdminController, :posts
+    resources "/posts", PostController, except: [:index, :show]
   end
 end

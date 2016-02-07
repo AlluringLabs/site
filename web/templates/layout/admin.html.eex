@@ -7,12 +7,19 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Hello Labs!</title>
+    <title>ADMIN!</title>
 
-    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <script src="https://use.typekit.net/moz1ffr.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/admin.css") %>">
   </head>
 
   <body>
+
+    <nav>
+      <a href="/" target="_blank">View Site</a>
+    </nav>
+
     <main role="main">
       <%= render @view_module, @view_template, assigns %>
     </main>

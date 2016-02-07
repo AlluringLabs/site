@@ -2,4 +2,9 @@
   <h3><%= post.title %></h3>
   <%= post.body %>
   <p>user: <%= post.user.username %></p>
+
+  <%= if logged_in?(@conn) do %>
+    <a href="#">edit</a>
+  <%= end %>
+  
 <% end %>
