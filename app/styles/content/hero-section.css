@@ -73,11 +73,12 @@
       }
 
       p {
-        font-weight: 300;
-        font-size: 0.8rem;
+        font-weight: 400;
+        font-size: 0.85rem;
+        line-height: 1.1;
         margin-top: 0px;
-        margin-bottom: 30px;
-        color: var(--dark-grey);
+        margin-bottom: 40px;
+        color: #8D9197;
       }
 
       .read-more {
