@@ -18,6 +18,7 @@ defmodule Labs.Router do
 
     # Do we want all of the pages in a single controller?
     get "/", PageController, :index
+    get "/articles", PostController, :index
     get "/about", PageController, :about
     get "/code", PageController, :code
     get "/showcase", PageController, :showcase

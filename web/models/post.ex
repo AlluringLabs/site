@@ -6,6 +6,7 @@ defmodule Labs.Post do
     field :body, :string
     field :tags, :map
     field :category, :string
+    field :slug, :string
     belongs_to :user, Labs.User
 
     timestamps
@@ -23,5 +24,6 @@ defmodule Labs.Post do
   def changeset(model, params \\ :empty) do
     model
     |> cast(params, @required_fields, @optional_fields)
+    |> unique_constraint(:slug)
   end
 end

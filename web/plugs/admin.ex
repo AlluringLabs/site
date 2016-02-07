@@ -3,7 +3,7 @@ defmodule Labs.Plugs.Admin do
 
   def init(default), do: default
   def call(conn, _) do
-    conn |> put_layout("admin.html")
+    put_layout(conn, "admin.html")
   end
 
 end

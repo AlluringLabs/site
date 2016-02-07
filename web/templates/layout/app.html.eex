@@ -38,15 +38,6 @@
       </nav>
     </header>
 
-    <!-- <nav>
-      <a href="/">Home</a>
-      <a href="/podcast">Podcast</a>
-      <a href="/code">Code</a>
-      <a href="/showcase">Showcase</a>
-      <a href="/about">About</a>
-      <a href="/contact">Contact</a>
-    </nav> -->
-
     <main role="main">
       <%= render @view_module, @view_template, assigns %>
     </main>

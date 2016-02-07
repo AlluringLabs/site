@@ -13,6 +13,7 @@ defmodule Labs.User do
     field :password_hash, :string
     field :password, :string, virtual: :true
     field :password_confirm, :string, virtual: :true
+    has_many :posts, Labs.Post
 
     timestamps
   end
