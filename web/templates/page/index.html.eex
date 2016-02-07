@@ -1,60 +1,28 @@
 <section id="hero-section">
+  <div class="overlay"></div>
   <div class="content-wrapper row middle-xs">
     <h2 class="col-xs-12">Recent Articles</h2>
 
-    <article class="article-snippet col-md-4">
-      <div class="article-content">
-        <div class="article-metadata">
-          <ul class="tags">
-            <li class="tag">elixir</li>
-            <li class="tag">js</li>
-            <li class="tag">development</li>
-          </ul>
+    <%= for post <- @posts do %>
+      <article class="article-snippet col-md-4">
+        <div class="article-content">
+          <div class="article-metadata">
+            <ul class="tags">
+              <li class="tag">elixir</li>
+              <li class="tag">js</li>
+              <li class="tag">development</li>
+            </ul>
 
-          <img class="profile-image" src="images/twitter/josh.jpg">
+            <img class="profile-image" src="images/twitter/josh.jpg">
+          </div>
+
+          <h3 class="article-title"><%= post.title %></h3>
+          <p><%= post.body %></p>
+          <a class="read-more" href="/articles/<%= post.slug %>">Read More</a>
         </div>
+      </article>
+    <% end %>
 
-        <h3 class="article-title">Article Title Here</h2>
-        <p>Lorem ipsum dolo sit amet, consectetur adipiscing elit.  Phasellus ac suscipit enim, a finibus nisl.  Maecenas at mollis risus. Suspendisse potenti.  Curabitur pellentesque ullamcorper est sed convallis. Nulla facilisis nisl arcu, sit amet scelerisque dui condimentum quis.</p>
-        <a class="read-more" href="#">Read More</a>
-      </div>
-    </article>
-
-    <article class="article-snippet col-md-4">
-      <div class="article-content">
-        <div class="article-metadata">
-          <ul class="tags">
-            <li class="tag">elixir</li>
-            <li class="tag">js</li>
-            <li class="tag">development</li>
-          </ul>
-
-          <img class="profile-image" src="images/twitter/josh.jpg">
-        </div>
-
-        <h3 class="article-title">Article Title Here</h2>
-        <p>Lorem ipsum dolo sit amet, consectetur adipiscing elit.  Phasellus ac suscipit enim, a finibus nisl.  Maecenas at mollis risus. Suspendisse potenti.  Curabitur pellentesque ullamcorper est sed convallis. Nulla facilisis nisl arcu, sit amet scelerisque dui condimentum quis.</p>
-        <a class="read-more" href="#">Read More</a>
-      </div>
-    </article>
-
-    <article class="article-snippet col-md-4">
-      <div class="article-content">
-        <div class="article-metadata">
-          <ul class="tags">
-            <li class="tag">elixir</li>
-            <li class="tag">js</li>
-            <li class="tag">development</li>
-          </ul>
-
-          <img class="profile-image" src="images/twitter/josh.jpg">
-        </div>
-
-        <h3 class="article-title">Article Title Here</h2>
-        <p>Lorem ipsum dolo sit amet, consectetur adipiscing elit.  Phasellus ac suscipit enim, a finibus nisl.  Maecenas at mollis risus. Suspendisse potenti.  Curabitur pellentesque ullamcorper est sed convallis. Nulla facilisis nisl arcu, sit amet scelerisque dui condimentum quis.</p>
-        <a class="read-more" href="#">Read More</a>
-      </div>
-    </article>
   </div>
 </section>
 

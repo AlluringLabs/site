@@ -1,8 +1,19 @@
 #hero-section {
   padding: 20px 0px;
   background-color: var(--grey);
-  background: url('images/hero-section.jpeg') center;
+  background: url('/images/hero-section.jpeg') center;
   background-size: cover;
+  position: relative;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(44, 84, 98, .41);
+    z-index: 1;
+  }
 
   @media (--md-break) {
     padding: 40px 0px;
@@ -14,11 +25,13 @@
     margin-top: 0px;
     font-size: 1.8rem;
     margin-bottom: 10px;
+    z-index: 5;
   }
 
   .article-snippet {
     margin: 0px 10px 10px;
     position: relative;
+    z-index: 10;
 
     @media (--md-break) {
       margin: 0px;

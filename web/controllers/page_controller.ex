@@ -1,8 +1,12 @@
 defmodule Labs.PageController do
   use Labs.Web, :controller
 
+  alias Labs.{Post, Repo}
+
   def index(conn, _params) do
-    render conn, "index.html"
+    posts = from p in Post, limit: 3, preload: [:user]
+    render conn, "index.html",
+      posts: Repo.all posts
   end
 
   def about(conn, _params) do
@@ -20,5 +24,5 @@ defmodule Labs.PageController do
   def contact(conn, _params) do
     render conn, "contact.html"
   end
-  
+
 end

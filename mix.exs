@@ -37,6 +37,7 @@ defmodule Labs.Mixfile do
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.9"},
      {:comeonin, "~> 2.1"},
+     {:exgravatar, "~> 2.0.0"},
      {:cowboy, "~> 1.0"}]
   end
 
