@@ -12,7 +12,7 @@ defmodule Labs.Post do
     timestamps
   end
 
-  @required_fields ~w(title body tags category)
+  @required_fields ~w(title body category slug)
   @optional_fields ~w()
 
   @doc """

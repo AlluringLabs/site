@@ -7,8 +7,8 @@ defmodule Labs.PostController do
   plug Labs.Plugs.Authorization, "before" when not action in [:index, :show]
 
   def index(conn, _) do
-    posts = Repo.all Post, preload: :users
-    render conn, "index.html", posts: posts
+    query = from p in Post, preload: [:user]
+    render conn, "index.html", posts: Repo.all query
   end
 
   def show(conn, %{"id" => id}) do

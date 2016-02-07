@@ -9,3 +9,11 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+
+Labs.Repo.insert! %Labs.Post{
+  title: "Some Long Article Title",
+  category: "Programming",
+  body: "Some fucking ## Markdown content",
+  slug: "some-long-article-title",
+  user_id: 1
+}

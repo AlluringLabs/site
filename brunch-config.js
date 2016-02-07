@@ -59,10 +59,10 @@ exports.config = {
     postcss: {
       processors: [
         require('autoprefixer')(['last 8 versions']),
-        require('postcss-cssnext')(),
-        require('postcss-import')(),
-        require('postcss-nested')(),
-        require('postcss-nesting')()
+        require('postcss-cssnext'),
+        require('postcss-import'),
+        require('postcss-nested'),
+        require('postcss-nesting')
       ]
     }
   },
@@ -77,6 +77,6 @@ exports.config = {
     enabled: true,
     // Whitelist the npm deps to be pulled in as front-end assets.
     // All other deps in package.json will be excluded from the bundle.
-    whitelist: ["phoenix", "phoenix_html"]
+    whitelist: ["phoenix", "phoenix_html", "vue", "reqwest", "underscore"]
   }
 };

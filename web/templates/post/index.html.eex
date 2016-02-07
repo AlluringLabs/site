@@ -1,0 +1,5 @@
+<%= for post <- @posts do %>
+  <h3><%= post.title %></h3>
+  <%= post.body %>
+  <p>user: <%= post.user.username %></p>
+<% end %>
