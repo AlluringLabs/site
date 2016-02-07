@@ -3,7 +3,11 @@
   --teal: #40788D;
   --light-blue: #55A9C7;
   --grey: #EBEBEB;
+  --dark-grey: #3A3A3A;
   --white: #FFFFFF;
+  --twitter-blue: #55ACEE;
+  --facebook-blue: #3B5998;
+  --github-blue: #4078C0;
 
   /** Breakpoints */
   @custom-media --lg-break screen and (min-width: 75em);

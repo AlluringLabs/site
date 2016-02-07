@@ -34,15 +34,15 @@
 
       &:hover {
         &.twitter {
-          color: #55ACEE;
+          color: var(--twitter-blue);
         }
 
         &.facebook {
-          color: #3B5998;
+          color: var(--facebook-blue);
         }
 
         &.github {
-          color: #4078C0;
+          color: var(--github-blue);
         }
       }
 

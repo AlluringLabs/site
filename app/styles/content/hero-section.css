@@ -27,6 +27,7 @@
       .article-title {
         font-weight: 200;
         font-size: 1.1rem;
+        color: var(--dark-grey);
         margin: 0px;
       }
 
@@ -41,6 +42,7 @@
         font-size: 0.8rem;
         margin-top: 0px;
         margin-bottom: 30px;
+        color: var(--dark-grey);
       }
 
       .read-more {
