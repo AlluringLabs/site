@@ -2,7 +2,7 @@
   <div class="overlay"></div>
   <div class="content-wrapper row middle-xs">
     <h2 class="col-xs-12">Recent Articles</h2>
-
+    
     <%= for post <- @posts do %>
       <article class="article-snippet col-md-4">
         <div class="article-content">
