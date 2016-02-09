@@ -1,19 +1,15 @@
-defmodule Labs.Post do
+defmodule Labs.Taxonomy do
   use Labs.Web, :model
 
-  schema "posts" do
-    field :title, :string
-    field :body, :string
-    field :tags, :map
-    field :category, :string
-    field :slug, :string
-    belongs_to :user, Labs.User
-    has_many :taxonomies, Labs.Taxonomy
+  schema "taxonomies" do
+    field :name, :string
+    field :type, :string
+    belongs_to :post, Labs.Post
 
     timestamps
   end
 
-  @required_fields ~w(title body category slug)
+  @required_fields ~w(name type)
   @optional_fields ~w()
 
   @doc """
@@ -25,6 +21,5 @@ defmodule Labs.Post do
   def changeset(model, params \\ :empty) do
     model
     |> cast(params, @required_fields, @optional_fields)
-    |> unique_constraint(:slug)
   end
 end
