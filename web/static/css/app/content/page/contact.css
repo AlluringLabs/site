@@ -1,0 +1,68 @@
+#contact {
+  .contact-form {
+    background-color: #F9F9F9;
+    border: 3px solid #E5E5E5;
+    margin-bottom: 80px;
+    padding: 30px 20px;
+
+    @media (--md-break) {
+      padding: 30px 40px 50px;
+    }
+
+    textarea {
+      margin-bottom: -10px;
+    }
+
+    button {
+      margin-top: 5px;
+    }
+
+    .form-section {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
+
+      .form-section-title {
+        text-align: left;
+        color: #9C9C9C;
+        font-weight: 300;
+        font-size: 1.4rem;
+        margin-top: 0px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .service-type {
+      margin-bottom: 10px;
+
+      input[type="radio"] {
+        display: none;
+
+        &:checked + span {
+          background-color: var(--light-blue);
+          color: var(--white);
+          border-color: var(--teal);
+        }
+      }
+
+      .radio-label {
+        display: block;
+        cursor: pointer;
+        background-color: var(--white);
+        color: var(--default-text);
+        font-weight: 400;
+        transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+        padding: 10px 0px;
+        border-radius: 3px;
+        border: 2px solid transparent;
+
+        &:hover {
+          background-color: var(--light-blue);
+          color: var(--white);
+        }
+      }
+    }
+  }
+}

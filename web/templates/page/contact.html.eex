@@ -1,0 +1,85 @@
+<div id="contact" class="content-wrapper">
+  <div class="row center-xs">
+    <h1 class="page-title col-xs-12">Contact Us</h1>
+
+    <form class="contact-form col-xs-11 col-md-9">
+      <div class="form-section row">
+        <h2 class="form-section-title col-xs-12">What services are you looking for?</h2>
+
+        <label class="service-type no-default col-md-3 col-sm-6 col-xs-12">
+          <input type="radio" name="service" checked>
+          <span class="radio-label">Development</span>
+        </label>
+
+        <label class="service-type no-default col-md-3 col-sm-6 col-xs-12">
+          <input type="radio" name="service">
+          <span class="radio-label">Design</span>
+        </label>
+
+        <label class="service-type no-default col-md-3 col-sm-6 col-xs-12">
+          <input type="radio" name="service">
+          <span class="radio-label">Consulting</span>
+        </label>
+
+        <label class="service-type no-default col-md-3 col-sm-6 col-xs-12">
+          <input type="radio" name="service">
+          <span class="radio-label">Other</span>
+        </label>
+      </div>
+
+      <div class="form-section row">
+        <h2 class="form-section-title col-xs-12">Let us know a bit more about the project</h2>
+
+        <label class="col-xs-12">
+          <span>Budget</span>
+
+          <div class="dropdown">
+            <select name="budget">
+              <option>Select A Range</option>
+              <option value="$500 - $1000">$500 - $1,000</option>
+              <option value="$1,001 - $2,500">$1,001 - $2,500</option>
+              <option value="$2,501 - $5,000">$2,501 - $5,000</option>
+              <option value="$5,001 - $10,000">$5,001 - $10,000</option>
+              <option value="$10,001+">$10,001+</option>
+            </select>
+          </div>
+        </label>
+
+        <label class="col-xs-12">
+          <span>Project Information</span>
+          <textarea name="projectinfo"></textarea>
+        </label>
+      </div>
+
+      <div class="form-section row">
+        <h2 class="form-section-title col-xs-12">Your contact information</h2>
+
+        <label class="col-sm-6 col-xs-12">
+          <span>First Name</span>
+          <input type="text" name="fname">
+        </label>
+
+        <label class="col-sm-6 col-xs-12">
+          <span>Last Name</span>
+          <input type="text" name="lname">
+        </label>
+
+        <label class="col-sm-6 col-xs-12">
+          <span>Email Address</span>
+          <input type="email" name="email">
+        </label>
+
+        <label class="col-sm-6 col-xs-12">
+          <span>Phone Number</span>
+          <input type="text" name="phone">
+        </label>
+      </div>
+
+      <div class="form-section row">
+        <div class="col-xs-12">
+          <button type="submit">Let Us Know!</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
