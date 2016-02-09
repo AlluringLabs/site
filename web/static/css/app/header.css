@@ -19,12 +19,15 @@
     &:last-of-type {
       text-align: right;
 
-      a:hover {
-        color: var(--light-blue);
+      a {
+        &:after {
+          background-color: var(--light-blue);
+        }
       }
     }
 
     a {
+      position: relative;
       font-size: 1.1rem;
       color: var(--white);
       text-decoration: none;
@@ -32,8 +35,20 @@
       transition: color 0.3s ease;
       margin: 0px 10px;
 
-      &:hover {
-        color: var(--teal);
+      &:after {
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 0;
+        height: 2px;
+        background-color: var(--teal);
+        content: "";
+        transition: width 0.2s;
+      }
+
+      &:hover:after {
+        width: 100%;
       }
     }
   }

@@ -1,0 +1,63 @@
+form {
+  label:not(.no-default) {
+    margin-bottom: 10px;
+
+    span {
+      display: block;
+      text-align: left;
+      margin-bottom: 5px;
+      color: var(--default-text);
+      cursor: pointer;
+    }
+
+    input, select, textarea {
+      box-sizing: border-box;
+      width: 100%;
+      border: 1px solid #E2E2E2;
+      background-color: var(--white);
+      border-radius: 3px;
+      font-size: 0.9rem;
+      padding-left: 15px;
+      height: 40px;
+      margin-bottom: 5px;
+    }
+
+    select {
+      background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50px' height='50px'><polyline points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>") no-repeat;
+      background-size: 15px 15px;
+      background-position: right 10px center;
+      background-color: var(--white);
+      appearance: none;
+    }
+
+    textarea {
+      min-height: 150px;
+      resize: vertical;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  button {
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid var(--teal);
+    background-color: var(--light-blue);
+    color: var(--white);
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 8px;
+    transition: background-color 0.3s ease;
+
+    @media (--md-break) {
+      padding: 12px;
+    }
+
+    &:hover {
+      background-color: var(--teal);
+    }
+  }
+}
