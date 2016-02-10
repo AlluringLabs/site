@@ -38,7 +38,8 @@ defmodule Labs.Mixfile do
      {:gettext, "~> 0.9"},
      {:comeonin, "~> 2.1"},
      {:exgravatar, "~> 2.0.0"},
-     {:cowboy, "~> 1.0"}]
+     {:cowboy, "~> 1.0"},
+     {:mailgun, "~> 0.1.2"}]
   end
 
   # Aliases are shortcut or tasks specific to the current project.

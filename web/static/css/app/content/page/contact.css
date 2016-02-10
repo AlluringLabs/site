@@ -9,10 +9,6 @@
       padding: 30px 40px 50px;
     }
 
-    textarea {
-      margin-bottom: -10px;
-    }
-
     button {
       margin-top: 5px;
     }
@@ -35,7 +31,7 @@
     }
 
     .service-type {
-      margin-bottom: 10px;
+      margin-bottom: 5px;
 
       input[type="radio"] {
         display: none;

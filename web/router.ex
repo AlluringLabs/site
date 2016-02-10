@@ -20,6 +20,8 @@ defmodule Labs.Router do
     get "/", PageController, :index
     get "/about", PageController, :about
     get "/contact", PageController, :contact
+    get "/contact/success", PageController, :contact_success
+    post "/contact/submit", PageController, :contact_submit
 
     # More dynamic pages
     get "/showcase", PageController, :showcase

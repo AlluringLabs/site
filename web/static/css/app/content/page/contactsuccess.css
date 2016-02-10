@@ -1,0 +1,20 @@
+#contactSuccess {
+  padding: 60px 10px;
+
+  @media (--md-break) {
+    padding: 100px 40px;
+  }
+
+  @media (--lg-break) {
+    padding: 200px 80px;
+  }
+
+  .page-title {
+    margin: 0px 0px 30px;
+  }
+
+  p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
