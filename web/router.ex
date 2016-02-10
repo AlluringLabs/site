@@ -16,32 +16,34 @@ defmodule Labs.Router do
   scope "/", Labs do
     pipe_through :browser # Use the default browser stack
 
-    # Just some Static pages
+    # Informational Pages
     get "/", PageController, :index
     get "/about", PageController, :about
-    get "/contact", PageController, :contact
-    get "/contact/success", PageController, :contact_success
-    post "/contact/submit", PageController, :contact_submit
 
-    # More dynamic pages
-    get "/showcase", PageController, :showcase
-    get "/code", PageController, :code
+    # Contact Us
+    get "/contact", ContactController, :index
+    get "/contact/success", ContactController, :success
+    post "/contact/submit", ContactController, :submit
 
+    # Articles
     get "/articles", PostController, :index
     get "/articles/:slug", PostController, :show
 
-    # TODO: change to delete before deployment
+    # More dynamic pages
+    # get "/showcase", PageController, :showcase
+    # get "/code", PageController, :code
+
     get "/logout", SessionController, :delete
+    get "/login", SessionController, :new
+    post "/login", SessionController, :create
   end
 
   scope "/admin", Labs do
     pipe_through :browser
 
     get "/", AdminController, :index
-    get "/login", SessionController, :new
-    post "/login", SessionController, :create
+    # get "/posts", AdminController, :posts
+    # resources "/posts", PostController, except: [:index, :show]
 
-    get "/posts", AdminController, :posts
-    resources "/posts", PostController, except: [:index, :show]
   end
 end

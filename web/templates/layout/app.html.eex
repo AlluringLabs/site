@@ -36,7 +36,7 @@
       <nav class="col-md-4">
         <a href="#">Showcase</a>
         <a href="#">About</a>
-        <a href="<%= page_path @conn, :contact %>">Contact</a>
+        <a href="<%= contact_path @conn, :index %>">Contact</a>
       </nav>
     </header>
 

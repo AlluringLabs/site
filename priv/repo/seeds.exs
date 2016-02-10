@@ -44,7 +44,7 @@ Labs.Repo.insert! %Labs.Post{
   user_id: 1
 }
 
-post = Labs.Repo.insert! %Labs.Post{
+Labs.Repo.insert! %Labs.Post{
   title: "Some Long Article Title",
   category: "Programming",
   body: "Lorem ipsum dolo sit amet, consectetur adipiscing elit. Phasellus ac suscipit enim, a finibus nisl. Maecenas at mollis risus. Suspendisse potenti. Curabitur pellentesque ullamcorper est sed convallis. Nulla facilisis nisl arcu, sit amet scelerisque dui condimentum quis.",

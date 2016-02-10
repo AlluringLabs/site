@@ -1,0 +1,7 @@
+<div id="contactSuccess" class="content-wrapper">
+  <div class="row center-xs">
+    <h1 class="page-title col-xs-12">Contact Submission Sent!</h1>
+    <p class="col-xs-12">Your contact submission was successfully sent.</p>
+    <p class="col-xs-12">Someone will reach out to you at our earliest convenience, just hang tight.</p>
+  </div>
+</div>
