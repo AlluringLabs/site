@@ -14,6 +14,11 @@ config :labs, Labs.Endpoint,
   pubsub: [name: Labs.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
+# Mailgun Configuration
+config :labs,
+  mailgun_domain: "https://api.mailgun.net/v3/alluringlabs.com",
+  mailgun_key: "key-a88bc5d337d955fc12a0b663fa3e4cb2"
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
