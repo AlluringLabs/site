@@ -20,6 +20,10 @@ defmodule Labs.Router do
     get "/", PageController, :index
     get "/about", PageController, :about
 
+    # Newsletter
+    post "/newsletter/submit", NewsletterController, :submit
+    post "/newsletter/success", NewsletterController, :success
+
     # Contact Us
     get "/contact", ContactController, :index
     get "/contact/success", ContactController, :success

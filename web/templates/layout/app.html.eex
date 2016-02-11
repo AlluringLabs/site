@@ -44,11 +44,26 @@
       <%= render @view_module, @view_template, assigns %>
     </main>
 
-    <footer id="footer">
+    <section id="footer-newsletter">
       <div class="content-wrapper row middle-xs between-xs">
-        <h1 class="col-xs-12">SIGNUP FOR OUR NEWSLETTER</h1>
-      </div>
+        <h5 class="newsletter-title col-xs-12">SIGNUP FOR OUR NEWSLETTER</h5>
 
+        <div class="newsletter-form-wrapper col-xs-12">
+          <%= form_for @contact_changeset, newsletter_path(@conn, :submit), [class: "newsletter-form row"], fn f -> %>
+            <div class="newsletter-field-wrapper col-xs-8 col-md-9">
+              <label>
+                <%= text_input f, :email, [placeholder: "Enter your email address"] %>
+              </label>
+            </div>
+            <div class="newsletter-field-wrapper col-xs-4 col-md-3">
+              <button type="submit">Sign Me Up!</button>
+            </div>
+          <%= end %>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
       <div class="content-wrapper row middle-xs between-xs">
         <div class="col-sm-6 col-xs-12">
           <p>&copy; 2016 Alluring Labs.  All Rights Reserved.</p>

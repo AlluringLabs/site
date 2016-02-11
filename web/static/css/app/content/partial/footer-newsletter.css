@@ -1,0 +1,64 @@
+#footer-newsletter {
+  padding: 40px 20px;
+  background-color: var(--teal);
+
+  .newsletter-title {
+    color: var(--white);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+
+  .newsletter-form {
+    padding: 0px;
+
+    .newsletter-field-wrapper {
+      padding: 0px;
+
+      label {
+        input {
+          height: 55px;
+          border-top-right-radius: 0px;
+          border-bottom-right-radius: 0px;
+          font-size: 1rem;
+          font-weight: 300;
+          border: none;
+
+          @media (--sm-break) {
+            font-size: 1.2rem;
+          }
+
+          @media (--md-break) {
+            font-size: 1.3rem;
+          }
+        }
+      }
+
+      button {
+        height: 55px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        margin-top: 0px;
+        border: none;
+        font-size: 0.9rem;
+        font-weight: 300;
+
+        &:hover {
+          background-color: var(--light-blue);
+        }
+
+        @media (--sm-break) {
+          font-size: 1.4rem;
+        }
+
+        @media (--md-break) {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
