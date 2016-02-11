@@ -44,25 +44,6 @@
       <%= render @view_module, @view_template, assigns %>
     </main>
 
-    <section id="footer-newsletter">
-      <div class="content-wrapper row middle-xs between-xs">
-        <h5 class="newsletter-title col-xs-12">SIGNUP FOR OUR NEWSLETTER</h5>
-
-        <div class="newsletter-form-wrapper col-xs-12">
-          <%= form_for @contact_changeset, newsletter_path(@conn, :submit), [class: "newsletter-form row"], fn f -> %>
-            <div class="newsletter-field-wrapper col-xs-8 col-md-9">
-              <label>
-                <%= text_input f, :email, [placeholder: "Enter your email address"] %>
-              </label>
-            </div>
-            <div class="newsletter-field-wrapper col-xs-4 col-md-3">
-              <button type="submit">Sign Me Up!</button>
-            </div>
-          <%= end %>
-        </div>
-      </div>
-    </section>
-
     <footer id="footer">
       <div class="content-wrapper row middle-xs between-xs">
         <div class="col-sm-6 col-xs-12">
@@ -95,6 +76,15 @@
       };
     </script>
     <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/zuooxq0z';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-73694507-1', 'auto');
+      ga('send', 'pageview');
+    </script>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>

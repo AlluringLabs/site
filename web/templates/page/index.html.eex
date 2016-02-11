@@ -26,8 +26,8 @@
       <div class="thing-wrapper">
         <i class="icon fa fa-code-fork"></i>
         <h4>Development</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Donec id sem risus.  Phasellus iaculis sem ac lorem placerat porttitor.  In vel viverra enim, eu scelerisque odio. Aliquam sollicitudin gravida dui, id placerat ante tempor eget.</p>
-        <a href="#">See Our Code</a>
+        <p>We use the latest and greatest web technologies. To encourage developer happiness, we keep our code clean and concise. We'll help you improve existing web applications or make your new idea come to fruition.</p>
+        <!-- <a href="#github-info">See Our Code</a> -->
       </div>
     </article>
 
@@ -35,8 +35,8 @@
       <div class="thing-wrapper">
         <i class="icon fa fa-diamond"></i>
         <h4>UX &amp; UI Design</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Donec id sem risus.  Phasellus iaculis sem ac lorem placerat porttitor.  In vel viverra enim, eu scelerisque odio. Aliquam sollicitudin gravida dui, id placerat ante tempor eget.</p>
-        <a href="#">See Our Designs</a>
+        <p>Bringing ideas to life in a visually appealing way is important to both you and your users. We love building great software and creating great design appeal to go with it.</p>
+        <!-- <a href="#">See Our Designs</a> -->
       </div>
     </article>
 
@@ -44,8 +44,8 @@
       <div class="thing-wrapper">
         <i class="icon fa fa-comments"></i>
         <h4>Consulting</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Donec id sem risus.  Phasellus iaculis sem ac lorem placerat porttitor.  In vel viverra enim, eu scelerisque odio. Aliquam sollicitudin gravida dui, id placerat ante tempor eget.</p>
-        <a href="#">Learn More</a>
+        <p>We want your business and/or startup to succeed. Using past experiences, we can help coach you and your team in the right direction.</p>
+        <!-- <a href="#">Learn More</a> -->
       </div>
     </article>
   </div>
@@ -60,9 +60,12 @@
         <img class="profile-image" src="images/twitter/josh.jpg">
         <div class="profile-content">
           <h4>Josh</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Donec id sem risus.  Phasellus iaculis sem ac lorem placerat porttitor.  In vel viverra enim, eu scelerisque odio. Aliquam sollicitudin gravida dui, id placerat ante tempor eget.</p>
+          <p>Write some kind of bio here...</p>
           <div class="users-social">
-            <a class="social-icon twitter" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="social-icon twitter" href="http://twitter.com/g33k_kidd" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a class="social-icon twitter" href="http://dribbble.com/g33kidd" target="_blank"><i class="fa fa-dribbble"></i></a>
+            <a class="social-icon twitter" href="http://g33kidd.com" target="_blank"><i class="fa fa-globe"></i></a>
+            <a class="social-icon twitter" href="http://instagram.com/g33kidd" target="_blank"><i class="fa fa-instagram"></i></a>
           </div>
         </div>
       </div>

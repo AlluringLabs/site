@@ -1,22 +1,19 @@
 defmodule Labs.Newsletter do
-  use Labs.Web, :model
 
-  schema "newsletter" do
-    field :email, :string
+  def add_email(email) do
+    case validate_format(email) do
+      :ok ->
+        Mailchimp.add_member("409cafb835", email)
+      {:error, reason} -> {:error, reason}
+    end
   end
 
-  @required_fields ~w(email)
-  @optional_fields ~w()
-
-  @doc """
-  Creates a changeset based on the `model` and `params`.
-
-  If no params are provided, an invalid changeset is returned
-  with no validation performed.
-  """
-  def changeset(model, params \\ :empty) do
-    model
-    |> validate_format(:email, ~r/.*@.*\..*/)
-    |> cast(params, @required_fields, @optional_fields)
+  def validate_format(email) do
+    if Regex.match? ~r/.*@.*\..*/, email do
+      :ok
+    else
+      {:error, "Not a valid email address."}
+    end
   end
+
 end

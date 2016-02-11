@@ -1,10 +1,16 @@
 defmodule Labs.NewsletterController do
   use Labs.Web, :controller
 
-  alias Labs.{Repo, Contact, Mailer}
+  plug :scrub_params, "newsletter" when action in [:submit]
 
-  def submit(conn, %{"newsletter" => contact_params}) do
-    # Do Stuff
+  alias Labs.{Newsletter}
+
+  def submit(conn, %{"newsletter" => %{"email" => email}}) do
+    IO.inspect email
+    member = Mailchimp.add_member("409cafb835", email)
+    IO.inspect member
+    # Newsletter.add_email email
+    redirect conn, to: "/"
   end
 
   def success(conn, _) do

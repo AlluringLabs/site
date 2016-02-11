@@ -1,0 +1,18 @@
+<!-- <section id="footer-newsletter">
+  <div class="content-wrapper row middle-xs between-xs">
+    <h5 class="newsletter-title col-xs-12">SIGNUP FOR OUR NEWSLETTER</h5>
+
+    <div class="newsletter-form-wrapper col-xs-12">
+      <%= form_tag "/", method: :post, class: "newsletter-form row" do %>
+        <div class="newsletter-field-wrapper col-xs-8 col-md-9">
+          <label>
+            <%= text_input :newsletter, :email, placeholder: "Enter your email address" %>
+          </label>
+        </div>
+        <div class="newsletter-field-wrapper col-xs-4 col-md-3">
+          <button type="submit">Sign Me Up!</button>
+        </div>
+      <%= end %>
+    </div>
+  </div>
+</section> -->
