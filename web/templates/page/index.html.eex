@@ -2,7 +2,7 @@
   <div class="overlay"></div>
   <div class="content-wrapper row middle-xs">
     <h2 class="col-xs-12">Recent Articles</h2>
-    
+
     <%= for post <- @posts do %>
       <article class="article-snippet col-md-4">
         <div class="article-content">
@@ -63,7 +63,7 @@
   <div class="content-wrapper row middle-xs">
     <h3 class="col-xs-12">Meet The Team</h3>
 
-    <div class="person col-sm-6">
+    <div class="person col-sm-5 col-sm-offset-1">
       <div class="person-wrapper">
         <img class="profile-image" src="images/twitter/josh.jpg">
         <div class="profile-content">
@@ -76,7 +76,7 @@
       </div>
     </div>
 
-    <div class="person col-sm-6">
+    <div class="person col-sm-5">
       <div class="person-wrapper">
         <img class="profile-image" src="images/twitter/david.png">
         <div class="profile-content">

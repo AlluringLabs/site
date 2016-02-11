@@ -42,8 +42,7 @@ defmodule Labs.Router do
     pipe_through :browser
 
     get "/", AdminController, :index
-    # get "/posts", AdminController, :posts
-    # resources "/posts", PostController, except: [:index, :show]
+    resources "/posts", PostController, except: [:index, :show]
 
   end
 end
