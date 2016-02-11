@@ -2,7 +2,13 @@
 @import "flexboxgrid";
 
 html {
-  overflow-x: hidden;
+  /** overflow-x: hidden; */
   font-family: 'Lato', sans-serif;
   background: #EEEEEE;
+
+  /** Fixes issue where the header would expand past 100% of the window width. */
+  .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
