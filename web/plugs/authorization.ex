@@ -7,7 +7,7 @@ defmodule Labs.Plugs.Authorization do
     if Conn.get_session(conn, :current_user) do
       conn
     else
-      conn |> redirect(to: "/admin/login")
+      conn |> redirect(to: session_path(conn, :new)) |> halt
     end
   end
 

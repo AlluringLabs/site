@@ -19,7 +19,7 @@ defmodule Labs.Mixfile do
   def application do
     [mod: {Labs, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex, :comeonin]]
+                    :phoenix_ecto, :postgrex, :comeonin, :tentacat]]
   end
 
   # Specifies which paths to compile per environment.
@@ -39,6 +39,8 @@ defmodule Labs.Mixfile do
      {:comeonin, "~> 2.1"},
      {:exgravatar, "~> 2.0.0"},
      {:cowboy, "~> 1.0"},
+     {:arc, "~> 0.3.0"},
+     {:tentacat, "~> 0.2"},
      {:mailgun, "~> 0.1.2"}]
   end
 

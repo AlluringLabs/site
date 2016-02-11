@@ -1,1 +1,8 @@
 <h1>NEW POST!</h1>
+
+<%= form_for @post, [method: :post, class: "new-post"], fn f -> %>
+  <%= text_input f, :title, placeholder: "Title" %>
+  <%= text_input f, :body, placeholder: "Body Content" %>
+  <%= text_input f, :slug, placeholder: "post-slug" %>
+  <%= submit "Create Post" %>
+<% end %>

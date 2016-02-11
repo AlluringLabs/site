@@ -1,7 +1,7 @@
 defmodule Labs.PageController do
   use Labs.Web, :controller
 
-  alias Labs.{Post, Repo, Contact, Mailer}
+  alias Labs.{Post, Repo}
 
   def index(conn, _params) do
     posts = from p in Post, limit: 3, preload: [:user]

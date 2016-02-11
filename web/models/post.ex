@@ -1,19 +1,18 @@
 defmodule Labs.Post do
   use Labs.Web, :model
 
+  alias Labs.{Post, Repo}
+
   schema "posts" do
     field :title, :string
     field :body, :string
-    field :tags, :map
-    field :category, :string
     field :slug, :string
     belongs_to :user, Labs.User
-    has_many :taxonomies, Labs.Taxonomy
 
     timestamps
   end
 
-  @required_fields ~w(title body category slug)
+  @required_fields ~w(title body slug)
   @optional_fields ~w()
 
   @doc """
@@ -26,5 +25,11 @@ defmodule Labs.Post do
     model
     |> cast(params, @required_fields, @optional_fields)
     |> unique_constraint(:slug)
+  end
+
+  def create(params, user_id) do
+    changeset = Post.changeset(%Post{}, params)
+    |> put_change(:user_id, user_id)
+    Repo.insert changeset
   end
 end

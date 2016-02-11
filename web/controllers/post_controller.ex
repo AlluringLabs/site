@@ -1,12 +1,17 @@
 defmodule Labs.PostController do
   use Labs.Web, :controller
 
-  alias Labs.{Repo, Post}
+  alias Labs.{Repo, Post, Taxonomy}
 
+  plug :scrub_params, "post" when action in [:create]
   plug Labs.Plugs.Admin, "before" when not action in [:index, :show]
   plug Labs.Plugs.Authorization, "before" when not action in [:index, :show]
 
   def index(conn, _) do
+    # query = from t in Taxonomy,
+    #   where: t.type == "category",
+    #   preload: [:post]
+    # render conn, "index.html", categories: Repo.all(query)
     query = from p in Post, preload: [:user]
     render conn, "index.html", posts: Repo.all query
   end
@@ -16,21 +21,24 @@ defmodule Labs.PostController do
       where: p.slug == ^slug,
       preload: [:user]
 
-    render conn, "show.html",
-      post: Repo.one query
+    render conn, "show.html", post: Repo.one query
   end
 
   def new(conn, _) do
-    render conn, "new.html"
+    post = Post.changeset %Post{}
+    render conn, "new.html", post: post
   end
 
   def create(conn, %{"post" => post_params}) do
-    # post = Post.changeset %Post{}, post_params
-    # |> put_change(:user_id, get_session(conn, :current_user))
-    #
-    # case Repo.insert post do
-    #   {:ok, post} ->
-    # end
+    current_user = get_session(conn, :current_user)
+    case Post.create post_params, current_user do
+      {:ok, post} ->
+        conn
+        |> put_flash(:info, "post created!")
+        |> redirect(to: admin_path(conn, :index))
+      {:error, post} ->
+        render "new.html", post: post
+    end
   end
 
   def edit(conn, %{"post" => post_params}) do
