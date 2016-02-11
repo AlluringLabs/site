@@ -1,0 +1,64 @@
+#github-info {
+  padding: 40px 20px;
+  background-color: var(--white);
+
+  .section-title {
+    font-weight: 200;
+    font-size: 3.3rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    line-height: 1.1;
+  }
+
+  .github-section-icon {
+    display: none;
+    margin-top: -10px;
+
+    .fa-github {
+      font-size: 20rem;
+      color: var(--dark-grey);
+    }
+
+    @media (--sm-break) {
+      display: block;
+    }
+  }
+
+  .github-link {
+    text-align: center;
+
+    @media (--sm-break) {
+      text-align: left;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--light-blue);
+      font-size: 1.5rem;
+      font-weight: 400;
+      position: relative;
+
+      &:after {
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 0;
+        height: 2px;
+        background-color: var(--teal);
+        content: "";
+        transition: width 0.2s;
+      }
+
+      &:hover {
+        color: var(--teal);
+      }
+
+      &:hover:after {
+        width: 100%;
+      }
+    }
+  }
+}

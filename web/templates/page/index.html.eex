@@ -209,4 +209,17 @@
 </section>
 
 <section id="github-info">
+  <div class="content-wrapper row">
+    <div class="col-xs-12 col-sm-6 github-section-icon">
+      <i class="fa fa-github"></i>
+    </div>
+
+    <div class="col-xs-12 col-sm-6">
+      <h4 class="section-title">We're On Github</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Donec id sem risus.  Phasellus iaculis sem ac lorem placerat porttitor.  In vel viverra enim, eu scelerisque odio. Aliquam sollicitudin gravida dui, id placerat ante tempor eget.</p>
+      <div class="github-link">
+        <a href="https://github.com/AlluringLabs" target="_blank">github.com/AlluringLabs</a>
+      </div>
+    </div>
+  </div>
 </section>
