@@ -23,21 +23,21 @@
   <body>
 
     <header id="header" class="row middle-xs between-xs">
-      <nav class="col-md-4">
+      <!-- <nav class="col-md-4">
         <a href="<%= post_path @conn, :index %>">Articles</a>
         <a href="#">Podcast</a>
         <a href="#">Code</a>
-      </nav>
+      </nav> -->
 
       <object type="image/svg+xml" data="/images/logo.svg">
         <img src="/images/logo.png" title="Logo" alt="Alluring Labs Logo">
       </object>
 
-      <nav class="col-md-4">
+      <!-- <nav class="col-md-4">
         <a href="#">Showcase</a>
         <a href="#">About</a>
         <a href="<%= contact_path @conn, :index %>">Contact</a>
-      </nav>
+      </nav> -->
     </header>
 
     <main role="main" id="content">
@@ -45,6 +45,10 @@
     </main>
 
     <footer id="footer">
+      <div class="content-wrapper row middle-xs between-xs">
+        <h1 class="col-xs-12">SIGNUP FOR OUR NEWSLETTER</h1>
+      </div>
+
       <div class="content-wrapper row middle-xs between-xs">
         <div class="col-sm-6 col-xs-12">
           <p>&copy; 2016 Alluring Labs.  All Rights Reserved.</p>
