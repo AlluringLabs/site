@@ -6,7 +6,7 @@
     <div class="col-xs-12">
       <div class="temp row between-sm">
         <div class="col-md-4 col-xs-12">
-          <p>We want to help your business succeed. Whether that is making your team and users happy, or devise new solutions to solve your problems. We're here to help!</p>
+          <p>We want to help make your business, or personal brand, succeed. Whether that means making your team and users happy, or helping you devise new solutions to solve your problems; we're here to help!</p>
         </div>
 
         <div class="col-md-7 col-xs-12">
@@ -27,7 +27,8 @@
         <div class="thing-wrapper">
           <i class="icon fa fa-code-fork"></i>
           <h4>Development</h4>
-          <p>We use the latest and greatest web technologies. To encourage developer happiness, we keep our code clean and concise. We'll help you improve existing web applications or make your new idea come to fruition.</p>
+          <p>Using the latest and greatest technologies, we can help you improve your existing web applications or make your new idea(s) come to full fruition.</p>
+          <p>We also enjoy our sanity, and making the end user happy, so the code we write is concise, clean and easily debuggable.</p>
           <!-- <a href="#github-info">See Our Code</a> -->
         </div>
       </article>
@@ -36,7 +37,8 @@
         <div class="thing-wrapper">
           <i class="icon fa fa-diamond"></i>
           <h4>UX &amp; UI Design</h4>
-          <p>Bringing ideas to life in a visually appealing way is important to both you and your users. We love building great software and creating great design appeal to go with it.</p>
+          <p>All great systems need to be accompanied by an alluring interface and a near perfect user experience.</p>
+          <p>We can bring your idea(s) to life in a visually appealing way; don't make your users deal with a poor experience!</p>
           <!-- <a href="#">See Our Designs</a> -->
         </div>
       </article>
@@ -45,7 +47,8 @@
         <div class="thing-wrapper">
           <i class="icon fa fa-comments"></i>
           <h4>Consulting</h4>
-          <p>We want your business and/or startup to succeed. Using past experiences, we can help coach you and your team in the right direction.</p>
+          <p>Don't know where to start when building your new system?  Perhaps you're stuck in the middle of a project, not knowing where to go?</p>
+          <p>Everyone needs a bit of guidance here and there; let our years of experiences guide the path to breathing new life into your old applications, or help pave the way for new ones!</p>
           <!-- <a href="#">Learn More</a> -->
         </div>
       </article>
