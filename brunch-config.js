@@ -1,4 +1,10 @@
 exports.config = {
+  /** Figure out how to not have to override this bitch. */
+  overrides: {
+    production: {
+      optimize: false
+    }
+  },
   // See http://brunch.io/#documentation for docs.
   files: {
     javascripts: {
