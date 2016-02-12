@@ -1,4 +1,5 @@
 .social-icon {
+  text-decoration: none;
   transition: color 0.3s ease;
 
   &:hover {
@@ -12,6 +13,18 @@
 
     &.github {
       color: var(--github-blue) !important;
+    }
+
+    &.dribbble {
+      color: var(--dribbble-pink) !important;
+    }
+
+    &.instagram {
+      color: var(--instagram-brown) !important;
+    }
+
+    &.website {
+      color: var(--website-blue) !important;
     }
   }
 }

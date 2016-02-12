@@ -21,6 +21,7 @@
   .thing-we-do {
     text-align: center;
     margin-top: 60px;
+    display: flex;
 
     &:first-of-type {
       margin-top: 0px;

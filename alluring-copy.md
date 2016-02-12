@@ -12,4 +12,4 @@ When it comes to design, we think like users.
 
 Consulting
 
-We want your business and/or startup to succeed. Using past experiences, we can help coach you and your team in the right direction. 
+We want your business and/or startup to succeed. Using past experiences, we can help coach you and your team in the right direction.

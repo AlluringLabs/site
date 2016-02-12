@@ -8,22 +8,22 @@
 
         <div class="field-wrapper col-xs-12">
           <div class="service-types row">
-            <label class="service-type no-default col-md-3 col-sm-6 col-xs-12">
+            <label tabindex=0 class="service-type no-default col-md-3 col-sm-6 col-xs-12">
               <%= radio_button f, :service, "Development" %>
               <span class="radio-label">Development</span>
             </label>
 
-            <label class="service-type no-default col-md-3 col-sm-6 col-xs-12">
+            <label tabindex=0 class="service-type no-default col-md-3 col-sm-6 col-xs-12">
               <%= radio_button f, :service, "Design" %>
               <span class="radio-label">Design</span>
             </label>
 
-            <label class="service-type no-default col-md-3 col-sm-6 col-xs-12">
+            <label tabindex=0 class="service-type no-default col-md-3 col-sm-6 col-xs-12">
               <%= radio_button f, :service, "Consulting" %>
               <span class="radio-label">Consulting</span>
             </label>
 
-            <label class="service-type no-default col-md-3 col-sm-6 col-xs-12">
+            <label tabindex=0 class="service-type no-default col-md-3 col-sm-6 col-xs-12">
               <%= radio_button f, :service, "Other" %>
               <span class="radio-label">Other</span>
             </label>
