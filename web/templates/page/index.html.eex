@@ -11,7 +11,7 @@
 
         <div class="col-md-7 col-xs-12">
           <p class="contact-us-button-headline">Have Something You'd Like Us To Work On?</p>
-          <a class="contact-us-button" href="#contact">Contact Us</a>
+          <a tabindex="0" class="contact-us-button" href="#contact">Contact Us</a>
         </div>
       </div>
     </div>
@@ -114,22 +114,22 @@
 
           <div class="field-wrapper col-xs-12">
             <div class="service-types row">
-              <label tabindex=0 class="service-type no-default col-md-3 col-sm-6 col-xs-12">
+              <label tabindex="0" class="service-type no-default col-md-3 col-sm-6 col-xs-12">
                 <%= radio_button f, :service, "Development" %>
                 <span class="radio-label">Development</span>
               </label>
 
-              <label tabindex=0 class="service-type no-default col-md-3 col-sm-6 col-xs-12">
+              <label tabindex="0" class="service-type no-default col-md-3 col-sm-6 col-xs-12">
                 <%= radio_button f, :service, "Design" %>
                 <span class="radio-label">Design</span>
               </label>
 
-              <label tabindex=0 class="service-type no-default col-md-3 col-sm-6 col-xs-12">
+              <label tabindex="0" class="service-type no-default col-md-3 col-sm-6 col-xs-12">
                 <%= radio_button f, :service, "Consulting" %>
                 <span class="radio-label">Consulting</span>
               </label>
 
-              <label tabindex=0 class="service-type no-default col-md-3 col-sm-6 col-xs-12">
+              <label tabindex="0" class="service-type no-default col-md-3 col-sm-6 col-xs-12">
                 <%= radio_button f, :service, "Other" %>
                 <span class="radio-label">Other</span>
               </label>
