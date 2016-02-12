@@ -10,7 +10,8 @@ exports.config = {
     },
     stylesheets: {
       joinTo: {
-        "css/app.css": [/^(web\/static\/css\/app)/, /^(node_modules)/],
+        "css/lib.css": [/^(node_modules)/],
+        "css/app.css": [/^(web\/static\/css\/app)/],
         "css/admin.css": /^(web\/static\/css\/admin)/
       }
     }
@@ -42,7 +43,6 @@ exports.config = {
       processors: [
         require('autoprefixer')(['last 8 versions']),
         require('postcss-cssnext'),
-        require('postcss-import'),
         require('postcss-nested'),
         require('postcss-nesting')
       ]
@@ -60,7 +60,7 @@ exports.config = {
     // Whitelist the npm deps to be pulled in as front-end assets.
     // All other deps in package.json will be excluded from the bundle.
     // whitelist: ["phoenix", "phoenix_html", "vue", "jquery"],
-    packages: ["phoenix", "phoenix_html", "vue", "jquery"],
+    packages: ["phoenix", "phoenix_html", "vue", "jquery", "flexbox", "normalize.css"],
     styles: {
       flexboxgrid: ["dist/flexboxgrid.css"],
       "normalize.css": ["normalize.css"]
