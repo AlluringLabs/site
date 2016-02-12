@@ -10,7 +10,7 @@ exports.config = {
     },
     stylesheets: {
       joinTo: {
-        "css/app.css": /^(web\/static\/css\/app)/,
+        "css/app.css": [/^(web\/static\/css\/app)/, /^(node_modules)/],
         "css/admin.css": /^(web\/static\/css\/admin)/
       }
     }
@@ -59,6 +59,11 @@ exports.config = {
     enabled: true,
     // Whitelist the npm deps to be pulled in as front-end assets.
     // All other deps in package.json will be excluded from the bundle.
-    whitelist: ["phoenix", "phoenix_html", "vue", "jquery"]
+    // whitelist: ["phoenix", "phoenix_html", "vue", "jquery"],
+    packages: ["phoenix", "phoenix_html", "vue", "jquery"],
+    styles: {
+      flexboxgrid: ["dist/flexboxgrid.css"],
+      "normalize.css": ["normalize.css"]
+    }
   }
 };
