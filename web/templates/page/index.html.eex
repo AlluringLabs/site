@@ -63,7 +63,7 @@
           <img class="profile-image" src="images/twitter/josh.jpg">
           <div class="profile-content">
             <h4>Josh</h4>
-            <p>Write some kind of bio here...</p>
+            <p>Hey there, I'm Joshua Kidd and based in Colorado; developer and designer here at Alluring Labs. I enjoy writing code and building designs. During my freetime I enjoy writing code, camping, riding dirt bikes and ice skating.</p>
             <div class="users-social">
               <a class="social-icon twitter" href="https://twitter.com/g33k_kidd" target="_blank">
                 <i class="fa fa-twitter"></i>
