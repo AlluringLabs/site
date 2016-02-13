@@ -1,6 +1,3 @@
-@import "normalize.css";
-@import "flexboxgrid";
-
 html {
   /** overflow-x: hidden; */
   font-family: 'Lato', sans-serif;
