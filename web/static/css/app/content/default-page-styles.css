@@ -8,4 +8,8 @@
     text-transform: uppercase;
     margin: 40px 0px;
   }
+
+  a {
+    transition: color 0.3s ease;
+  }
 }

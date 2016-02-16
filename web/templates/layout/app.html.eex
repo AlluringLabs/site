@@ -69,6 +69,7 @@
       <div class="content-wrapper row middle-xs between-xs">
         <div class="col-sm-6 col-xs-12">
           <p>&copy; 2016 Alluring Labs.  All Rights Reserved.</p>
+          <a href="<%= page_path(@conn, :privacy) %>" target="_blank" class="privacy-policy">Privacy Policy</a>
         </div>
 
         <div class="social-media col-sm-6 col-xs-12">

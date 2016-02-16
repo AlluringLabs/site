@@ -1,0 +1,46 @@
+#privacy-policy {
+  padding: 0px 20px;
+
+  .privacy-section-title, p, .privacy-subsection-title {
+    color: var(--dark-grey);
+    margin: 0px;
+  }
+
+  .privacy-section-title {
+    margin: 25px 0px 10px;
+
+    &:first-of-type {
+      margin-top: 0px;
+    }
+  }
+
+  .privacy-subsection-title {
+    margin: 15px 0px 0px;
+  }
+
+  .alluring-labs-contact-info {
+    margin-bottom: 40px;
+
+    h4 {
+      margin-bottom: 0px;
+      margin-top: 15px;
+    }
+
+    a, p {
+      margin-bottom: 0px;
+    }
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  a {
+    color: var(--light-blue);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--teal);
+    }
+  }
+}

@@ -19,6 +19,7 @@ defmodule Labs.Router do
     # Informational Pages
     get "/", PageController, :index
     get "/about", PageController, :about
+    get "/privacy-policy", PageController, :privacy
 
     # Newsletter
     # post "/newsletter/submit", NewsletterController, :submit

@@ -5,18 +5,18 @@
   padding: 0px 20px;
 
   .content-wrapper {
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 15px;
 
     @media (--sm-break) {
       min-height: 80px;
-      padding-top: 0px;
-      padding-bottom: 0px;
     }
   }
 
   p {
     text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
 
     @media (--sm-break) {
       text-align: left;
@@ -31,9 +31,31 @@
       margin-left: 26px;
       color: var(--white);
 
+      &:first-child {
+        margin-left: 0px;
+      }
+
       @media (--sm-break) {
         text-align: right;
       }
+    }
+  }
+
+  .privacy-policy {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: block;
+    text-align: center;
+    margin: 10px 0px 20px;
+
+    &:hover {
+      color: var(--light-blue);
+    }
+
+    @media (--sm-break) {
+      text-align: left;
+      margin: 0px;
     }
   }
 }

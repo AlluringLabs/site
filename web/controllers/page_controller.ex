@@ -20,4 +20,8 @@ defmodule Labs.PageController do
     render conn, "showcase.html"
   end
 
+  def privacy(conn, _params) do
+    render conn, "privacy-policy.html"
+  end
+
 end
