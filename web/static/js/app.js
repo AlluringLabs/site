@@ -1,15 +1,23 @@
 'use strict';
 
+const AnalyticHelpers = require('./analytics');
 const scrollTo = require('./scrollTo');
 
 let contactScrollButton = document.getElementsByClassName('contact-us-button')[0];
 if (contactScrollButton) {
   contactScrollButton.addEventListener('click', (e) => {
+    AnalyticHelpers.clickEvent('Contact Us Scroll Button', 'Home Page');
     scrollTo('contact');
     e.preventDefault();
   }, false);
 }
 
+let contactForm = document.getElementsByClassName('contact-form')[0];
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    AnalyticHelpers.submissionEvent('Contact Us Form', 'Home Page');
+  }, false);
+}
 
 let serviceTypeEles = document.getElementsByClassName('service-type');
 // The code must be wrapped in a loop and a self calling closure to  be able
