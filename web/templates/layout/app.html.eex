@@ -55,8 +55,8 @@
         <a href="#">Code</a>
       </nav> -->
 
-      <object type="image/svg+xml" data="/images/logo.svg">
-        <img src="/images/logo.png" title="Logo" alt="Alluring Labs Logo">
+      <object type="image/svg+xml" data="<%= static_path(@conn, "/images/logo.svg") %>">
+        <img src="<%= static_path(@conn, "/images/logo.png") %>" title="Logo" alt="Alluring Labs Logo">
       </object>
 
       <!-- <nav class="col-md-4">
