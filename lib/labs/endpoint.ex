@@ -10,6 +10,7 @@ defmodule Labs.Endpoint do
   plug Plug.Static,
     at: "/", from: :labs, gzip: true,
     only: ~w(css fonts images js favicon robots.txt)
+    cache_control_for_etags: "public, max-age=31536000"
 
   # Code reloading can be explicitly enabled under the
   # :code_reloader configuration of your endpoint.
