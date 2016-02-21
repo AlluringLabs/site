@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Update to allow this to be changed at the view level -->
     <meta name="description" content="Get the quality results that you and your business deserve!  Alluring Labs is a worldwide web and mobile application development digital agency.">
     <meta rel="canonical" href="<%= @conn.request_path %>">
 
