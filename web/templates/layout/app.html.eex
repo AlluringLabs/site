@@ -31,7 +31,10 @@
 
     <title>Alluring Labs</title>
 
-    <!-- TODO: Add meta tags here or figure out how to make them dynamic. -->
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/lib.css") %>">
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -41,12 +44,6 @@
       ga('create', 'UA-73694507-1', 'auto');
       ga('send', 'pageview');
     </script>
-    <script src="https://use.typekit.net/moz1ffr.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="<%= static_path(@conn, "/css/lib.css") %>">
-    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 
   <body>
@@ -100,6 +97,8 @@
       </div>
     </footer>
 
+    <script src="https://use.typekit.net/moz1ffr.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <script>
       window.intercomSettings = {
         app_id: "zuooxq0z"
