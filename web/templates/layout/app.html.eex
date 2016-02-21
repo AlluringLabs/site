@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Get the quality results that you and your business deserve!  Alluring Labs is a worldwide web and mobile application development digital agency.">
+    <meta rel="canonical" href="<%= @conn.request_path %>">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="<%= static_path(@conn, "/favicon/apple-touch-icon-57x57.png") %>">
